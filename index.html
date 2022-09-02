@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Basketball Scoreboard</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex-container">
+        <div class="flex-score-container">
+          <h1>HOME</h1>
+          <div class="score-element home-score-element">
+            <h2 id="home-score">0</h2>
+          </div>
+          <div class="points-btn">
+            <button
+              aria-label="add 1 point"
+              onclick="homeAddOnePoint()"
+              class="btn btn-point1 homeBtn1"
+            >
+              +1
+            </button>
+            <button
+              aria-label="add 2 points"
+              onclick="homeAddTwoPoints()"
+              class="btn btn-point2 homeBtn2"
+            >
+              +2
+            </button>
+            <button
+              aria-label="add 3 points"
+              onclick="homeAddThreePoints()"
+              class="btn btn-point3 homeBtn3"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+        <div class="flex-score-container">
+          <h1>GUEST</h1>
+          <div class="score-element">
+            <h2 id="guest-score">0</h2>
+          </div>
+          <div class="points-btn">
+            <button
+              aria-label="add 1 point"
+              onclick="guestAddOnePoint()"
+              class="btn btn-point1 guestBtn1"
+            >
+              +1
+            </button>
+            <button
+              aria-label="add 2 points"
+              onclick="guestAddTwoPoints()"
+              class="btn btn-point2 guestBtn2"
+            >
+              +2
+            </button>
+            <button
+              aria-label="add 3 points"
+              onclick="guestAddThreePoints()"
+              class="btn btn-point3 guestBtn3"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="reset">
+        <button aria-label="reset button" onclick="resetScores()" id="reset-el">
+          NEW GAME
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
